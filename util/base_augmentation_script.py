@@ -1,5 +1,19 @@
 import json
+from itertools import chain
+import random
 
+from nltk.corpus import wordnet
+
+
+def get_synonyms(word,default_words):
+    # https://stackoverflow.com/questions/19258652/how-to-get-synonyms-from-nltk-wordnet-python
+    synonyms = wordnet.synsets(word)
+    lemmas = set(chain.from_iterable([word.lemma_names() for word in synonyms]))
+    try:
+        lemmas.remove(word)
+        return lemmas[0]
+    except:
+        return random.choice(default_words).decode('utf-8')
 
 def read_original_dataset():
     formatted = {}
