@@ -1,0 +1,14 @@
+                        precision    recall  f1-score   support
+
+                   OOS       0.99      1.00      0.99      1481
+       add_to_playlist       0.97      0.99      0.98       421
+       book_restaurant       0.94      0.92      0.93       405
+           get_weather       1.00      0.97      0.98       419
+            play_music       0.96      0.97      0.97       417
+             rate_book       1.00      0.98      0.99       385
+  search_creative_work       0.86      0.92      0.89       393
+search_screening_event       0.97      0.90      0.93       375
+
+              accuracy                           0.97      4296
+             macro avg       0.96      0.96      0.96      4296
+          weighted avg       0.97      0.97      0.97      4296

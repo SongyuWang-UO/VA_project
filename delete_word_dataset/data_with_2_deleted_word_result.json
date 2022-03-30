@@ -1,0 +1,13 @@
+                        precision    recall  f1-score   support
+
+       add_to_playlist       1.00      0.87      0.93       422
+       book_restaurant       0.95      0.89      0.92       428
+           get_weather       0.93      0.92      0.92       420
+            play_music       0.90      0.94      0.92       400
+             rate_book       0.90      0.98      0.94       381
+  search_creative_work       0.80      0.92      0.85       410
+search_screening_event       0.94      0.87      0.90       376
+
+              accuracy                           0.91      2837
+             macro avg       0.92      0.91      0.91      2837
+          weighted avg       0.92      0.91      0.91      2837
